@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+    <div>
+      <nav class="nav">
+        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+        <a class="nav-link active" aria-current="page" href="#">Product</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <img src="Official Logo_ Hearts2Hearts ‘The Chase’.png" alt="Logo">
+    </div>
+    <div>
+      <button class="icon-btn" onclick="Search()"><i class="bi bi-search"></i></button>
+      <button class="icon-btn" onclick="Cart()"><i class="bi bi-cart"></i></button>
+    </div>
+  </header>
+
+  <div>
+    <h1 style="text-align: center; padding: 40px;">Hearts2Hearts Merchandise</h1>
+  </div>
+  
+  <div class="barang">
+    <div class="card" style="width: 18rem;">
+      <img src="the chase photobook.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">The 1st Single [The Chase] (PhotoBook Ver.)</p>
+        <p>$14.72</p>
+        <button class="btn btn-primary" onclick="AddToCart('The 1st Single [The Chase] (PhotoBook Ver.)', 14.27)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="the chase minibook.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">The 1st Single [The Chase] (MiniBook Ver.) (SMART ALBUM)</p>
+        <p>$16.20</p>
+        <button class="btn btn-primary" onclick="AddToCart('The 1st Single [The Chase] (MiniBook Ver.) (SMART ALBUM)', 16.20)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="the chase package.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">Hearts2Hearts - 1st Single Album [The Chase] (Package Ver.)</p>
+        <p>$16.90</p>
+        <button class="btn btn-primary" onclick="AddToCart('Hearts2Hearts - 1st Single Album [The Chase] (Package Ver.)', 16.90)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="the chase bandana ver.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text" style="padding-bottom: 23px;">The Chase - BANDANA (BLUE VER.)</p>
+        <p>$19.79</p>
+        <button class="btn btn-primary" onclick="AddToCart('The Chase - BANDANA (BLUE VER.)', 19.79)">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="barang">
+    <div class="card" style="width: 18rem;">
+      <img src="teenieping photo sticker.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">Teenieping X Hearts2Hearts - 4CUT PHOTO STICKER</p>
+        <p>$3.96</p>
+        <button class="btn btn-primary" onclick="AddToCart('Teenieping X Hearts2Hearts - 4CUT PHOTO STICKER', 3.96)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="teenieping carabiner.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">Teenieping X Hearts2Hearts - RANDOM CARABINER KEY RING</p>
+        <p>$10.89</p>
+        <button class="btn btn-primary" onclick="AddToCart('Teenieping X Hearts2Hearts - RANDOM CARABINER KEY RING', 10.89)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="teenieping trading card.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">Teenieping X Hearts2Hearts - RANDOM TRADING CARD SET</p>
+        <p>$5.94</p>
+        <button class="btn btn-primary" onclick="AddToCart('Teenieping X Hearts2Hearts - RANDOM TRADING CARD SET', 5.94)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="teenieping tin badge.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">Teenieping X Hearts2Hearts - TIN BADGE</p>
+        <p>$4.95</p>
+        <button class="btn btn-primary" onclick="AddToCart('Teenieping X Hearts2Hearts - TIN BADGE', 4.95)">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="barang">
+    <div class="card" style="width: 18rem;">
+      <img src="focus rule book.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">The 1st Mini Album [FOCUS] (Rule Book Ver.)</p>
+        <p>$23.51</p>
+        <button class="btn btn-primary" onclick="AddToCart('The 1st Mini Album [FOCUS] (Rule Book Ver.)', 23.51)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="focus photobook.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">The 1st Mini Album [FOCUS] (Rule Book Ver.)</p>
+        <p>$14.72</p>
+        <button class="btn btn-primary" onclick="AddToCart('The 1st Mini Album [FOCUS] (Rule Book Ver.)', 14.72)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="focus heart locket.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">The 1st Mini Album [FOCUS] (Heart Locket Ver.)(SMART ALBUM)</p>
+        <p>$36.75</p>
+        <button class="btn btn-primary" onclick="AddToCart('The 1st Mini Album [FOCUS] (Heart Locket Ver.)(SMART ALBUM)', 36.75)">Add To Cart</button>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="focus smini.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">The 1st Mini Album [FOCUS] (SMini Ver.)(SMART ALBUM)</p>
+        <p>$13.24</p>
+        <button class="btn btn-primary" onclick="AddToCart('The 1st Mini Album [FOCUS] (SMini Ver.)(SMART ALBUM)', 13.24)">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="barang1">
+    <div class="card" style="width: 18rem;">
+      <img src="season's greetings.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hearts2Hearts</h5>
+        <p class="card-text">2026 SM ARTIST SEASON'S GREETINGS</p>
+        <p>$54.46</p>
+        <button class="btn btn-primary" onclick="AddToCart('2026 SM ARTIST SEASONS GREETINGS', 54.46)">Add To Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-isi">
+      <img src="logo putih.png" alt="">
+      <p>Company <strong>SM ENTERTAIMENT</strong> Manage by <strong> CENTER 2 PRISM</strong> Address <strong>04769 83-21 Wangsimni-ro, Seongdong-gu, Seoul 04769, Republic of Korea 8F</strong><br>
+        E-mail <strong>smtown@smtown.com</strong> CEO <strong>MIYEON KIM</strong>
+      </p> 
+    </div>
+    
+    <div class="socmed">
+      <a href="https://facebook.com/hearts2heartsH2H" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://x.com/hearts2hearts" target="_blank"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/hearts2hearts/" target="_blank"><i class="bi bi-youtube"></i></a>
+      <a href="https://www.youtube.com/@hearts2hearts.official" target="_blank"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.querySelector(".header");
+    const footer = document.querySelector(".footer");
+
+    header.style.display = "flex";
+    footer.style.display = 'flex';
+  </script>
+
+  <script>
+    let cart = [];
+    function AddToCart(productName, price) {
+      cart.push({ name: productName, price: price });
+
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: productName + " berhasil ditambahkan ke keranjang!",
+        showConfirmButton: false,
+        timer: 1500
+      });
+
+      console.log("Isi keranjang sekarang:", cart);
+    }
+  </script>
+
+  <script>
+    function Search() {
+      Swal.fire({
+        title: "Cari produk",
+        input: "text",
+        inputPlaceholder: "Ketik nama produk...",
+        showCancelButton: true,
+        confirmButtonText: "Cari",
+        cancelButtonText: "Batal"
+      }).then(result => {
+        if (result.value) {
+          Swal.fire("Mencari: " + result.value);
+        }
+      });
+    }
+
+    function Cart() {
+      Swal.fire({
+        title: "Keranjang",
+        text: "Kamu punya " + cart.length + " item di keranjang.",
+        icon: "info"
+      });
+    }
+  </script>
+
+
+  
+
+
+  <footer class="footer">
+    <p>&copy; 2023 GFG. All rights reserved.</p>
+  </footer>
+</body>
+</html>

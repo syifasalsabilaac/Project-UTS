@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="opening">
+    <img src="Official Logo_ Hearts2Hearts ‘The Chase’ (1).png" alt="Name" style="width: 600px;"/>
+  </div>
+
+  <header class="header">
+    <div>
+      <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="produk.html">Product</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <img src="Official Logo_ Hearts2Hearts ‘The Chase’.png" alt="Logo">
+    </div>
+    <div>
+      <button class="icon-btn" onclick="Search()"><i class="bi bi-search"></i></button>
+      <button class="icon-btn" onclick="Cart()"><i class="bi bi-cart"></i></button>
+    </div>
+  </header>
+
+  <div class="home">
+    <div class="opening">
+      <div>
+        <video controls muted loop playsinline class="d-block w-100">
+          <source src="Hearts2Hearts 하츠투하츠 'FOCUS' MV Teaser.mp4" type="video/mp4">
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+          <h5><b>CHECK NEW COMEBACK</b></h5>
+          <p>Hearts2Hearts The 1st Mini Album 【FOCUS】</p>
+          <button onclick="window.open('https://www.youtube.com/watch?v=Ur7aK4FvK-U&list=PLA91TLEzZINsP0fJ9Mwb1S7x8RuP8IaRI', '_blank')">LISTEN NOW!</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin: 50px;">Members</h3>
+
+    <div class="member">
+      <div class="members">
+        <img src="carmen.jpg" alt="carmen">
+        <h4>Carmen</h4>
+      </div>
+
+      <div class="members">
+        <img src="jiwoo.jpg" alt="jiwoo">
+        <h4>Jiwoo</h4>
+      </div>
+
+      <div class="members">
+        <img src="yuha.jpg" alt="Yuha">
+        <h4>Yuha</h4>
+      </div>
+
+      <div class="members">
+        <img src="stella.jpg" alt="stella">
+        <h4>Stella</h4>
+      </div>
+
+      <div class="members">
+        <img src="juun.jpg" alt="juun">
+        <h4>Juun</h4>
+      </div>
+
+      <div class="members">
+        <img src="ana.jpg" alt="ana">
+        <h4>A-na</h4>
+      </div>
+
+      <div class="members">
+        <img src="ian.jpg" alt="ian">
+        <h4>Ian</h4>
+      </div>
+
+      <div class="members">
+        <img src="yeon.jpg" alt="nayeon">
+        <h4>Ye-on</h4>
+      </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-isi">
+      <img src="logo putih.png" alt="">
+      <p>Company <strong>SM ENTERTAIMENT</strong> Manage by <strong> CENTER 2 PRISM</strong> Address <strong>04769 83-21 Wangsimni-ro, Seongdong-gu, Seoul 04769, Republic of Korea 8F</strong><br>
+        E-mail <strong>smtown@smtown.com</strong> CEO <strong>MIYEON KIM</strong>
+      </p> 
+    </div>
+    
+    <div class="socmed">
+      <a href="https://facebook.com/hearts2heartsH2H" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://x.com/hearts2hearts" target="_blank"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.instagram.com/hearts2hearts/" target="_blank"><i class="bi bi-youtube"></i></a>
+      <a href="https://www.youtube.com/@hearts2hearts.official" target="_blank"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const opening = document.querySelector(".opening");
+    const home = document.querySelector(".home");
+    const header = document.querySelector(".header");
+    const footer = document.querySelector(".footer");
+
+    setTimeout(() => {
+      opening.style.display = "none";
+      home.style.display = "flex";
+      header.style.display = "flex";
+      footer.style.display = 'flex';
+    }, 2000);
+  </script>
+
+  <script>
+    function Search() {
+      Swal.fire({
+        title: "Cari produk",
+        input: "text",
+        inputPlaceholder: "Ketik nama produk...",
+        showCancelButton: true,
+        confirmButtonText: "Cari",
+        cancelButtonText: "Batal"
+      }).then(result => {
+        if (result.value) {
+          Swal.fire("Mencari: " + result.value);
+        }
+      });
+    }
+
+    function Cart() {
+      Swal.fire({
+        title: "Keranjang",
+        text: "Kamu punya " + cart.length + " item di keranjang.",
+        icon: "info"
+      });
+    }
+  </script>
+  
+</body>
+</html>
