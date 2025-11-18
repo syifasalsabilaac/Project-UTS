@@ -12,7 +12,7 @@ Aplikasi ini dibangun menggunakan:
 - HTML
 - CSS
 - JAVASCRIPT
-- BOOTSTRAP"# Project-UTS"
+- BOOTSTRAP
   
 ## Screenshot website
 <img width="1920" height="1200" alt="Image" src="https://github.com/user-attachments/assets/9e5f677f-ba01-4563-8a22-a3e9b0dae0e3" />
