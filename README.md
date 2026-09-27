@@ -1,5 +1,5 @@
 # Website jual beli sederhana
-Website ini dirancang untuk memperjualbelikan berbagai merchandise dari sebuah grup K-pop Hearts2Hearts.
+Website ini dirancang sebagai platform untuk menjual berbagai merchandise dari grup K-pop Hearts2Hearts.
 
 ## Feature website
 - Halaman Home
